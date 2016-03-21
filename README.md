@@ -10,15 +10,18 @@ For ease of use, a couple of 'make commands' are supplied within this repo.`
 
 After cloning the repository, just execute these commands:
 
-**Deployment**  
+#### Building the Docker image  
 
 ```
 $ make bench_deploy
 ```
 
-
-**Execution**
+#### Usage
 
 ```
 $ make bench
 ```
+
+This will run the container together with the supplied script. The script returns a menu from which you can choose an option.
+
+![alt text](img/docker-phoronix.png "Menu")
