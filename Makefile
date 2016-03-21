@@ -6,11 +6,11 @@ bench_run:
 
 bench_cleanup_image:
 	@echo "Removing old image..."
-	@ssh $(CONNECT) docker images -q --filter "dangling=true" | xargs -r ssh $(CONNECT) docker rmi
+	@docker images -q --filter "dangling=true" | xargs -r docker rmi
 
 bench_cleanup_container:
 	@echo "Removing container..."
-	@ssh $(CONNECT) docker stop docker-bench | xargs -r ssh $(CONNECT) docker rm 
+	@docker stop docker-bench | xargs -r docker rm 
 
 bench_deploy: bench_build bench_cleanup_image
 
