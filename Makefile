@@ -1,5 +1,5 @@
 bench_build:
-	@docker build -t docker-bench -f bench/Dockerfile bench
+	@docker build -t docker-bench -f Dockerfile .
 
 bench_run:
 	@docker run -i --name docker-bench docker-bench 
