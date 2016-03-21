@@ -10,14 +10,14 @@ For ease of use, a couple of 'make commands' are supplied within this repo.`
 
 After cloning the repository, just execute these commands:
 
-** Deployment **  
+**Deployment**  
 
 ```
 $ make bench_deploy
 ```
 
 
-**  Execution **
+**Execution**
 
 ```
 $ make bench
